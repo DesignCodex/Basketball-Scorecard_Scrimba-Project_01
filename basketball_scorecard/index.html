@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="content-wrapper">
+                <div id="main-wrappers">
+                    <div id="home-wrapper">
+                        <div>
+                            <h3>HOME</h3>
+                            <div id="number-home" class="number-display">00</div>
+                        </div>
+                        <div id="buttons-home">
+                            <ul>
+                                <li><button id="plus-one" class="buttons" onclick="scoreOneHome()">+1</button></li>
+                                <li><button id="plus-two" class="buttons" onclick="scoreTwoHome()">+2</button></li>
+                                <li><button id="plus-three" class="buttons" onclick="scoreThreeHome()">+3</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="guest-wrapper">
+                            <div>
+                                <h3>GUEST</h3>
+                                <div id="number-guest" class="number-display">00</div>
+                            </div>
+                            <div id="buttons-guest">
+                                <ul>
+                                    <li><button id="plus-one" class="buttons" onclick="scoreOneGuest()">+1</button></li>
+                                    <li><button id="plus-two" class="buttons" onclick="scoreTwoGuest()">+2</button></li>
+                                    <li><button id="plus-three" class="buttons" onclick="scoreThreeGuest()">+3</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="options">
+                    <div>
+                        <div><b>PERIOD</b></div>
+                        <div id="period"></div>
+
+                    </div>
+                    <div>
+                        <div><b>TIMER</b></div>
+                        <div id="timer"></div>
+                    </div>
+                    <div>
+                        <button id="reset-button" class="buttons" onclick="resetScore()">NEW GAME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="index.js"></script>
+        <script>
+            window.onload = function () {
+                let time = 720
+                let display = document.getElementById("timer");
+                startTimer(time, display)
+            };
+        </script>
+    </body>
+</html>
