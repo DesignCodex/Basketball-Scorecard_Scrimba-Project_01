@@ -1,0 +1,125 @@
+body {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    color: orangered;
+    background: linear-gradient(papayawhip, peachpuff);
+}
+
+#profile_img {
+    border-radius: 50%;
+    width: 175px;
+    margin: 10px 0 5px 0;
+    border: 6px solid plum
+}
+
+.module-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2, h4 {
+    font-size: 24px;
+}
+
+#bday-age {
+    background: peachpuff;
+    padding: 5px 15px;
+    border-radius: 12px;
+    margin: 15px 0 10px 0;
+}
+
+#bday-date {
+    background: peachpuff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin: 0 0 10px 0;
+}
+
+.gift-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+
+.gift-header {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    color: #d75d00;
+}
+
+.gift-subheader {
+    margin: 0 0 30px 0;
+    color: #d75d00;
+}
+
+.gift {
+    width: 400px;
+    height: 400px;
+    border-radius: 4px;
+    border: 6px solid white;
+}
+
+#gift-01 {
+    background-image: url(gift-cover.jpg);
+    background-size: cover;
+}
+
+#gift-02 {
+    background-image: url(gift-cover.jpg);
+    background-size: cover;
+}
+
+#gift-03 {
+    background-image: url(gift-cover.jpg);
+    background-size: cover;
+}
+
+#gift-04 {
+    background-image: url(gift-cover.jpg);
+    background-size: cover;
+}
+
+#gift-05 {
+    background-image: url(gift-cover.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+#gift-01:hover {
+    background-image: url(happy.gif);
+}
+
+#gift-02:hover {
+    background-image: url(hot.gif);
+}
+
+#gift-03:hover {
+    background-image: url(genius.gif);
+}
+
+#gift-04:hover {
+    background-image: url(badass.gif);
+}
+
+#gift-05:hover {
+    background-image: url(cheers.gif);
+}
+
+h4 {
+    text-align: center;
+    margin: 100px 0 60px 0;
+}
+
+a {
+    color: orangered;
+}
